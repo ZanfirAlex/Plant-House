@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F66" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Plant" representedClassName="Plant" syncable="YES" codeGenerationType="class">
+        <attribute name="bio" optional="YES" attributeType="String"/>
+        <attribute name="careLevel" optional="YES" attributeType="String"/>
+        <attribute name="growthRate" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nickname" optional="YES" attributeType="String"/>
+        <attribute name="poison" optional="YES" attributeType="String"/>
+        <attribute name="sciName" optional="YES" attributeType="String"/>
+        <attribute name="sun" optional="YES" attributeType="String"/>
+        <attribute name="watering" optional="YES" attributeType="String"/>
+    </entity>
+</model>

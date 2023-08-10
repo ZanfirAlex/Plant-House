@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QRD-q8-WtI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlantHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlantHouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDL-YE-QMZ">
+                                <rect key="frame" x="30" y="211" width="333" height="60"/>
+                                <color key="tintColor" name="PlantHouse Green"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="46"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceW-v8-mhE">
+                                <rect key="frame" x="30" y="365" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nwh-UC-nhl"/>
+                                </constraints>
+                                <color key="tintColor" name="PlantHouse Green"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title=" Search" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="strokeColor" name="PlantHouse White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="PlantHouse White"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="JLg-cy-x34" kind="show" id="vfL-Fx-fPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3B-0V-lTT">
+                                <rect key="frame" x="30" y="475" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="q3c-ch-tNS"/>
+                                </constraints>
+                                <color key="tintColor" name="PlantHouse White"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="leaf" catalog="system" title=" My Plants" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="strokeColor" name="PlantHouse White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="PlantHouse White"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2Ik-iz-Mth" kind="show" id="1kd-GD-maq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qs-Fl-mLR">
+                                <rect key="frame" x="30" y="585" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zbt-LE-KYy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="book" catalog="system" title=" Plant Care Guide" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="strokeColor" name="PlantHouse White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="PlantHouse White"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Bmc-oZ-1ei" kind="show" id="LOV-K3-dA0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_______________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cq-Zl-BhB">
+                                <rect key="frame" x="30" y="251" width="333" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4Ed-Cb-3bC">
+                                <rect key="frame" x="146.66666666666666" y="718" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dZP-EL-owK"/>
+                                    <constraint firstAttribute="width" constant="100" id="u9N-HE-7jp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uDL-YE-QMZ" secondAttribute="trailing" constant="30" id="7Q8-gT-sn8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Cq-Zl-BhB" secondAttribute="trailing" constant="30" id="7U9-kr-xWO"/>
+                            <constraint firstItem="uDL-YE-QMZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GQJ-ov-XWX"/>
+                            <constraint firstItem="7Cq-Zl-BhB" firstAttribute="top" secondItem="uDL-YE-QMZ" secondAttribute="bottom" constant="-20" id="I0g-kE-3Yh"/>
+                            <constraint firstItem="7Cq-Zl-BhB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWh-ls-9NW"/>
+                            <constraint firstItem="4Ed-Cb-3bC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MT6-7O-jPM"/>
+                            <constraint firstItem="4Ed-Cb-3bC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oxj-fB-ha8"/>
+                            <constraint firstItem="ceW-v8-mhE" firstAttribute="top" secondItem="7Cq-Zl-BhB" secondAttribute="bottom" constant="90" id="TEr-6R-vvz"/>
+                            <constraint firstItem="uDL-YE-QMZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="W4g-yx-bzg"/>
+                            <constraint firstItem="8Qs-Fl-mLR" firstAttribute="top" secondItem="L3B-0V-lTT" secondAttribute="bottom" constant="60" id="amu-Xf-gaf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L3B-0V-lTT" secondAttribute="trailing" constant="30" id="ay6-Vo-7Lq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Qs-Fl-mLR" secondAttribute="trailing" constant="30" id="d6l-C3-Cv1"/>
+                            <constraint firstItem="8Qs-Fl-mLR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gz3-qT-hDM"/>
+                            <constraint firstItem="L3B-0V-lTT" firstAttribute="top" secondItem="ceW-v8-mhE" secondAttribute="bottom" constant="60" id="hy5-XW-CRd"/>
+                            <constraint firstItem="ceW-v8-mhE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ibq-7w-cie"/>
+                            <constraint firstItem="L3B-0V-lTT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="mTA-ED-4LG"/>
+                            <constraint firstItem="7Cq-Zl-BhB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vML-ZB-cvc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ceW-v8-mhE" secondAttribute="trailing" constant="30" id="zqQ-T3-kC6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="rf6-60-2ut"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="uDL-YE-QMZ" id="qA9-hF-c3X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="-34.507042253521128"/>
+        </scene>
+        <!--Search a Plant-->
+        <scene sceneID="pYC-yL-woo">
+            <objects>
+                <tableViewController id="JLg-cy-x34" customClass="SearchTableViewController" customModule="PlantHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Kry-ZO-kXB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <color key="separatorColor" name="PlantHouse White"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="prominent" id="rog-Dr-bQn">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" name="PlantHouse Green"/>
+                            <color key="tintColor" name="AccentColor"/>
+                            <color key="barTintColor" name="PlantHouse Green"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="JLg-cy-x34" id="n7h-Cl-59B"/>
+                            </connections>
+                        </searchBar>
+                        <connections>
+                            <outlet property="dataSource" destination="JLg-cy-x34" id="jz2-3r-JdW"/>
+                            <outlet property="delegate" destination="JLg-cy-x34" id="Xos-i3-NNd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search a Plant" id="bKa-TT-22K">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="57I-ib-hNp">
+                            <color key="tintColor" name="PlantHouse White"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="JLg-cy-x34" id="mCa-aD-pOq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="rog-Dr-bQn" id="fP0-ys-1fb"/>
+                        <segue destination="F1i-6g-2fX" kind="show" identifier="SearchToProfile" id="3Ix-DK-D6G"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kci-eI-QC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908" y="-35"/>
+        </scene>
+        <!--PlantName-->
+        <scene sceneID="Gdd-kQ-Wai">
+            <objects>
+                <viewController id="F1i-6g-2fX" customClass="SearchProfileViewController" customModule="PlantHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ban-Gt-H0K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eND-xg-0MX">
+                                <rect key="frame" x="30" y="175" width="333" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="jmV-z7-ElY">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="POy-fd-7qI"/>
+                                            <constraint firstAttribute="width" constant="150" id="xPy-Z5-BhV"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="top" axis="vertical" distribution="fillProportionally" alignment="top" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lot-2E-XNp">
+                                        <rect key="frame" x="180" y="0.0" width="153" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Plant Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-LA-jkg">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.66666666666667" height="150"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                <color key="textColor" name="PlantHouse White"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-KE-cl0">
+                                <rect key="frame" x="30" y="509.33333333333326" width="333" height="202"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💧 Water: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRj-TV-rZB">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☀️ Sunlight: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRO-HR-Plf">
+                                        <rect key="frame" x="0.0" y="44.000000000000057" width="114.33333333333333" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🪴 Care Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxe-1w-j0f">
+                                        <rect key="frame" x="0.0" y="88.000000000000057" width="137.66666666666666" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌱 Growth Rate: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyb-Vd-GuH">
+                                        <rect key="frame" x="0.0" y="132.00000000000006" width="156.33333333333334" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐾 Poisonous to Pets: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faI-LG-bfu">
+                                        <rect key="frame" x="0.0" y="176.00000000000006" width="196" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant very long Scientific " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-P4-bzh">
+                                <rect key="frame" x="30" y="355" width="333" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b43-mt-nkp">
+                                <rect key="frame" x="30" y="401" width="333" height="88.333333333333314"/>
+                                <string key="text">The gorgeous Swiss cheese plant (Monstera deliciosa) is a fast-growing, evergreen variety of tropical plant with gorgeous, perforated, glossy foliage.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKv-Qt-rot">
+                                <rect key="frame" x="30" y="731.33333333333337" width="333" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gp6-0s-o6v"/>
+                                </constraints>
+                                <color key="tintColor" name="PlantHouse White"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system" title=" Add to My Plants" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="0.0">
+                                        <color key="backgroundColor" name="PlantHouse White"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="PlantHouse Green"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="F1i-6g-2fX" eventType="touchUpInside" id="SXo-7M-XFp"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoN-1i-dNw">
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
+                                <color key="backgroundColor" name="PlantHouse Green"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="dYp-fh-oN8">
+                                <rect key="frame" x="186" y="416" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" name="AccentColor"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Ml-lq-x0s"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <constraints>
+                            <constraint firstItem="JKv-Qt-rot" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" constant="30" id="4gc-lB-j5k"/>
+                            <constraint firstItem="b43-mt-nkp" firstAttribute="top" secondItem="TzK-P4-bzh" secondAttribute="bottom" constant="20" id="5tR-6f-dpk"/>
+                            <constraint firstItem="b43-mt-nkp" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" constant="30" id="9Wd-04-BYU"/>
+                            <constraint firstItem="4Ml-lq-x0s" firstAttribute="trailing" secondItem="TzK-P4-bzh" secondAttribute="trailing" constant="30" id="9qb-UA-49i"/>
+                            <constraint firstItem="4Ml-lq-x0s" firstAttribute="trailing" secondItem="JKv-Qt-rot" secondAttribute="trailing" constant="30" id="Ct7-0I-bm1"/>
+                            <constraint firstItem="eND-xg-0MX" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" constant="30" id="JNY-Jp-NZ2"/>
+                            <constraint firstItem="4Ml-lq-x0s" firstAttribute="bottom" secondItem="MoN-1i-dNw" secondAttribute="bottom" id="LRN-p9-Cg1"/>
+                            <constraint firstItem="JKv-Qt-rot" firstAttribute="top" secondItem="Vtt-KE-cl0" secondAttribute="bottom" constant="20" id="La4-im-lxm"/>
+                            <constraint firstItem="MoN-1i-dNw" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" id="RCa-r4-xVs"/>
+                            <constraint firstItem="MoN-1i-dNw" firstAttribute="top" secondItem="4Ml-lq-x0s" secondAttribute="top" id="YjI-mt-04m"/>
+                            <constraint firstAttribute="trailing" secondItem="b43-mt-nkp" secondAttribute="trailing" constant="30" id="a1n-If-h2G"/>
+                            <constraint firstItem="MoN-1i-dNw" firstAttribute="trailing" secondItem="4Ml-lq-x0s" secondAttribute="trailing" id="dIM-tM-w1B"/>
+                            <constraint firstItem="4Ml-lq-x0s" firstAttribute="trailing" secondItem="eND-xg-0MX" secondAttribute="trailing" constant="30" id="fCB-os-Y8p"/>
+                            <constraint firstItem="eND-xg-0MX" firstAttribute="top" secondItem="4Ml-lq-x0s" secondAttribute="top" constant="20" id="hdQ-Ct-MdK"/>
+                            <constraint firstItem="TzK-P4-bzh" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" constant="30" id="juJ-7A-QbC"/>
+                            <constraint firstItem="Vtt-KE-cl0" firstAttribute="top" secondItem="b43-mt-nkp" secondAttribute="bottom" constant="20" id="n9a-be-MYw"/>
+                            <constraint firstItem="4Ml-lq-x0s" firstAttribute="trailing" secondItem="Vtt-KE-cl0" secondAttribute="trailing" constant="30" id="vR5-Yg-mNJ"/>
+                            <constraint firstItem="Vtt-KE-cl0" firstAttribute="leading" secondItem="4Ml-lq-x0s" secondAttribute="leading" constant="30" id="wUY-4x-kGP"/>
+                            <constraint firstItem="TzK-P4-bzh" firstAttribute="top" secondItem="eND-xg-0MX" secondAttribute="bottom" constant="30" id="xXH-uB-F0V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PlantName" id="5Nf-QH-sJj"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="dYp-fh-oN8" id="KgG-zK-h5E"/>
+                        <outlet property="bio" destination="b43-mt-nkp" id="56T-d3-KtM"/>
+                        <outlet property="careLevelLabel" destination="Jxe-1w-j0f" id="upX-lz-6ob"/>
+                        <outlet property="growthRateLabel" destination="uyb-Vd-GuH" id="1sw-tF-wef"/>
+                        <outlet property="maskView" destination="MoN-1i-dNw" id="7Ns-zq-EB2"/>
+                        <outlet property="nameLabel" destination="Ug6-LA-jkg" id="Njk-Vg-cc9"/>
+                        <outlet property="poisonLabel" destination="faI-LG-bfu" id="mIJ-A6-5hU"/>
+                        <outlet property="profileImage" destination="jmV-z7-ElY" id="KnF-NB-6Ow"/>
+                        <outlet property="sciNameLabel" destination="TzK-P4-bzh" id="Hx6-dB-iAl"/>
+                        <outlet property="sunlightLabel" destination="SRO-HR-Plf" id="hah-HO-KPe"/>
+                        <outlet property="waterLabel" destination="cRj-TV-rZB" id="yG7-8V-qDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYq-Ab-uev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3997.709923664122" y="-35.211267605633807"/>
+        </scene>
+        <!--Plant Care Guide-->
+        <scene sceneID="jTw-qw-Ctn">
+            <objects>
+                <viewController id="Bmc-oZ-1ei" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MPX-aJ-rKA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="3252"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-qW-CZ8">
+                                <rect key="frame" x="0.0" y="165" width="393" height="3087"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-qU-hZl" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="3200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watering:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zc0-n6-Vxj">
+                                                <rect key="frame" x="30" y="337" width="333" height="26"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl1-kn-gq2">
+                                                <rect key="frame" x="30" y="371" width="333" height="507.66666666666674"/>
+                                                <string key="text">Frequent watering: Water regularly when the top inch of soil is dry. Plants prefer consistently moist soil.
+
+Average watering: Water when the top 1-2 inches of soil feel dry. Follow a regular watering routine based on the plant's needs.
+
+Minimum watering: Water only when the soil is significantly dry. Check moisture by inserting your finger a few inches into the soil.
+
+No watering: These plants can tolerate drier conditions. Water sparingly when the soil is completely dry.
+
+To know when to water, use the finger test (feel the soil's dryness), monitor the weight of the plant, use a moisture meter, or observe signs of thirst like wilting or dullness.</string>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmZ-gq-dyW">
+                                                <rect key="frame" x="30" y="20" width="333" height="287"/>
+                                                <string key="text">Welcome to PlantHouse, your go-to mobile app for all your plant care needs! Our comprehensive Plant Care Guide provides essential information on watering, sunlight requirements, growth levels, and care levels to help you grow healthy and thriving plants. Whether you're a beginner or a seasoned plant enthusiast, PlantHouse is here to guide you in providing the best care for your leafy companions. Let's dive into our expert tips and recommendations to create a green haven in your home or garden.</string>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunlight:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEv-gv-w5b">
+                                                <rect key="frame" x="30" y="898.66666666666674" width="333" height="26"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbi-2m-u1I">
+                                                <rect key="frame" x="30" y="934.66666666666674" width="333" height="662.33333333333326"/>
+                                                <string key="text">Full shade: Thrives with very limited or no direct sunlight, prefers filtered light under tree canopies or in shaded garden corners.
+
+Part shade: Flourishes with a balance of sunlight and shade, benefits from shade during the hottest parts of the day. This includes plants that prefer morning sun and afternoon shade or can tolerate dappled light.
+
+Sun-part shade: Adapts well to a range of light conditions, from partial shade to areas with more direct sunlight. It can handle some direct sunlight but may benefit from shade during the hottest part of the day.
+
+Full sun: Requires at least 6 hours of direct sunlight daily, making it suitable for open, sunny areas with minimal shade.
+
+To ensure optimal growth, carefully observe lighting conditions, shade patterns, and your plant's specific needs when deciding on its placement. Remember, providing the right light conditions is essential for a vibrant and healthy plant.</string>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Growth Rate:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXO-rX-tcV">
+                                                <rect key="frame" x="30" y="1627" width="333" height="26"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-Yv-D36">
+                                                <rect key="frame" x="30" y="1663" width="333" height="706.33333333333348"/>
+                                                <string key="text">Low growth: Plants with low growth rates grow slowly and require minimal pruning or maintenance. They typically take longer to reach their full size. These plants are well-suited for small spaces or for those who prefer low-maintenance greenery.
+
+Medium growth: Plants with a medium growth rate have a moderate rate of growth. They generally require regular pruning or trimming to maintain their shape and size.These plants strike a balance between slow and fast-growing varieties.
+
+High growth: Plants with a high growth rate grow quickly and may require more frequent pruning or maintenance to keep them in check. They tend to have a vigorous growth habit and can fill out a space or reach their mature size relatively fast. These plants are ideal for those seeking lush, rapidly growing foliage or quick coverage.
+
+When selecting plants based on their growth level, consider the available space and your desired maintenance level. Low-growth plants are suitable for smaller areas or minimal upkeep, while high-growth plants are better for those seeking rapid growth and larger greenery.</string>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Care Level:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUb-iF-JYg">
+                                                <rect key="frame" x="30" y="2389.3333333333335" width="333" height="26"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                <color key="textColor" name="AccentColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPY-Pe-DZf">
+                                                <rect key="frame" x="30" y="2425.3333333333335" width="333" height="640.33333333333348"/>
+                                                <string key="text">Low care: Plants with a low care level require minimal attention and maintenance. They are generally hardy and can tolerate some neglect. These plants are suitable for beginners or those with limited time for plant care.
+
+Medium care: Plants with a medium care level require regular attention and specific care routines. These plants are suitable for individuals with some experience in plant care or those willing to invest moderate effort in maintaining their plants.
+
+High care: Plants with a high care level demand consistent and meticulous care. They may have specific temperature, humidity, or soil requirements. These plants often need frequent monitoring and specialized care techniques. They are suitable for experienced plant enthusiasts who are dedicated to providing optimal conditions for their plants.
+
+When selecting plants based on their care level, consider your experience level, the amount of time you can dedicate to plant care, and your willingness to learn and adapt to the plant's specific needs.</string>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="W1u-Yv-D36" secondAttribute="trailing" constant="30" id="0BV-kB-Fum"/>
+                                            <constraint firstItem="Tbi-2m-u1I" firstAttribute="top" secondItem="ZEv-gv-w5b" secondAttribute="bottom" constant="10" id="0MS-3e-rAb"/>
+                                            <constraint firstItem="Zc0-n6-Vxj" firstAttribute="top" secondItem="NmZ-gq-dyW" secondAttribute="bottom" constant="30" id="1DR-yk-hPJ"/>
+                                            <constraint firstItem="GXO-rX-tcV" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="2c0-M3-IFs"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZEv-gv-w5b" secondAttribute="trailing" constant="30" id="4To-dt-Esj"/>
+                                            <constraint firstAttribute="trailing" secondItem="QUb-iF-JYg" secondAttribute="trailing" constant="30" id="4bo-yP-dZw"/>
+                                            <constraint firstItem="W1u-Yv-D36" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="635-GM-Hlh"/>
+                                            <constraint firstAttribute="trailing" secondItem="GXO-rX-tcV" secondAttribute="trailing" constant="30" id="EiW-PC-PBE"/>
+                                            <constraint firstItem="W1u-Yv-D36" firstAttribute="top" secondItem="GXO-rX-tcV" secondAttribute="bottom" constant="10" id="FUf-lK-PIy"/>
+                                            <constraint firstAttribute="trailing" secondItem="NmZ-gq-dyW" secondAttribute="trailing" constant="30" id="FgU-ps-qiE"/>
+                                            <constraint firstItem="QUb-iF-JYg" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="Hh0-4w-eLR"/>
+                                            <constraint firstItem="Tbi-2m-u1I" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="IVQ-Ev-azZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="NPY-Pe-DZf" secondAttribute="trailing" constant="30" id="KIs-wW-cnS"/>
+                                            <constraint firstItem="NmZ-gq-dyW" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="OOm-XJ-qL2"/>
+                                            <constraint firstItem="Cl1-kn-gq2" firstAttribute="top" secondItem="Zc0-n6-Vxj" secondAttribute="bottom" constant="8" id="Ozm-aG-Aki"/>
+                                            <constraint firstAttribute="height" constant="3200" id="PL5-GA-Wlm"/>
+                                            <constraint firstItem="NPY-Pe-DZf" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="QFB-HT-kl4"/>
+                                            <constraint firstItem="ZEv-gv-w5b" firstAttribute="top" secondItem="Cl1-kn-gq2" secondAttribute="bottom" constant="20" id="Sny-ub-YRA"/>
+                                            <constraint firstItem="Zc0-n6-Vxj" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="YdX-9v-h9n"/>
+                                            <constraint firstItem="ZEv-gv-w5b" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="cqu-Q6-v4S"/>
+                                            <constraint firstItem="NPY-Pe-DZf" firstAttribute="top" secondItem="QUb-iF-JYg" secondAttribute="bottom" constant="10" id="eiq-I4-eGd"/>
+                                            <constraint firstItem="Cl1-kn-gq2" firstAttribute="leading" secondItem="bNU-qU-hZl" secondAttribute="leading" constant="30" id="n6b-Ey-QIR"/>
+                                            <constraint firstItem="GXO-rX-tcV" firstAttribute="top" secondItem="Tbi-2m-u1I" secondAttribute="bottom" constant="30" id="nEl-hM-4n0"/>
+                                            <constraint firstItem="QUb-iF-JYg" firstAttribute="top" secondItem="W1u-Yv-D36" secondAttribute="bottom" constant="20" id="q5s-3I-BrW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zc0-n6-Vxj" secondAttribute="trailing" constant="30" id="qoI-9j-qNr"/>
+                                            <constraint firstItem="NmZ-gq-dyW" firstAttribute="top" secondItem="bNU-qU-hZl" secondAttribute="top" constant="20" id="r0E-kP-RF7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cl1-kn-gq2" secondAttribute="trailing" constant="30" id="u2d-6x-lJf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tbi-2m-u1I" secondAttribute="trailing" constant="30" id="udh-bE-IbO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bNU-qU-hZl" firstAttribute="leading" secondItem="3bQ-qW-CZ8" secondAttribute="leading" id="A4c-h0-jTz"/>
+                                    <constraint firstAttribute="trailing" secondItem="bNU-qU-hZl" secondAttribute="trailing" id="MSE-zs-DuB"/>
+                                    <constraint firstItem="bNU-qU-hZl" firstAttribute="top" secondItem="3bQ-qW-CZ8" secondAttribute="top" id="Nff-fW-uhY"/>
+                                    <constraint firstItem="bNU-qU-hZl" firstAttribute="bottom" secondItem="3bQ-qW-CZ8" secondAttribute="bottom" id="gVr-tz-BQ7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="54U-QA-5l6"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <constraints>
+                            <constraint firstItem="bNU-qU-hZl" firstAttribute="width" secondItem="MPX-aJ-rKA" secondAttribute="width" id="7Le-gN-FII"/>
+                            <constraint firstItem="3bQ-qW-CZ8" firstAttribute="top" secondItem="54U-QA-5l6" secondAttribute="top" constant="10" id="GBk-qS-i0Y"/>
+                            <constraint firstAttribute="bottom" secondItem="3bQ-qW-CZ8" secondAttribute="bottom" id="HJg-aF-wKn"/>
+                            <constraint firstItem="3bQ-qW-CZ8" firstAttribute="trailing" secondItem="54U-QA-5l6" secondAttribute="trailing" id="SkF-C3-EU3"/>
+                            <constraint firstItem="3bQ-qW-CZ8" firstAttribute="leading" secondItem="MPX-aJ-rKA" secondAttribute="leading" id="cB7-L6-Fx3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Plant Care Guide" largeTitleDisplayMode="always" id="XvB-B6-dG7">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="pwE-er-5Mm"/>
+                    </navigationItem>
+                    <size key="freeformSize" width="393" height="3252"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNb-Yd-v8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="1544.3661971830986"/>
+        </scene>
+        <!--My Plants-->
+        <scene sceneID="fRA-zE-RcL">
+            <objects>
+                <tableViewController id="2Ik-iz-Mth" customClass="MyPlantsTableViewController" customModule="PlantHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KL2-hJ-GvB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <color key="separatorColor" name="PlantHouse White"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <connections>
+                            <outlet property="dataSource" destination="2Ik-iz-Mth" id="Gnj-26-Ggp"/>
+                            <outlet property="delegate" destination="2Ik-iz-Mth" id="D6M-1m-XUH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Plants" id="1N8-4b-h7K"/>
+                    <connections>
+                        <segue destination="His-Tr-feR" kind="show" identifier="MyPlantsToProfile" id="uGO-Zn-y4Z"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZ6-EE-52O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908" y="736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o0g-lk-3vm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QRD-q8-WtI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="UZC-zJ-iPn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="PlantHouse White"/>
+                        <color key="barTintColor" name="PlantHouse Green"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="PlantHouse White"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="28"/>
+                            <color key="textColor" name="PlantHouse White"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PGE-ab-Esh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbA-VU-NwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
+        </scene>
+        <!--PlantName-->
+        <scene sceneID="ijg-O8-eBe">
+            <objects>
+                <viewController id="His-Tr-feR" customClass="MyPlantsProfileViewController" customModule="PlantHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1jl-Bm-Gov">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="khs-DP-tTq">
+                                <rect key="frame" x="30" y="175" width="333" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="ByC-zR-WGT">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="5uH-TW-EaB"/>
+                                            <constraint firstAttribute="width" constant="150" id="AVH-hL-09x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Plant Very Long Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20R-9U-Xol">
+                                        <rect key="frame" x="180" y="0.0" width="153" height="150"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Def-zb-syN">
+                                <rect key="frame" x="30" y="543.66666666666663" width="333" height="202"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💧 Water: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ug6-yN-N9r">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☀️ Sunlight: " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-Je-JiN">
+                                        <rect key="frame" x="0.0" y="44" width="114.33333333333333" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🪴 Care Level: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-pm-VqA">
+                                        <rect key="frame" x="0.0" y="88" width="137.66666666666666" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌱 Growth Rate: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-yR-Qbo">
+                                        <rect key="frame" x="0.0" y="132" width="156.33333333333334" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 🐾 Poisonous to Pets: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkU-6h-EKI">
+                                        <rect key="frame" x="0.0" y="176" width="202.33333333333334" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztc-C5-8RS">
+                                <rect key="frame" x="30" y="435.33333333333331" width="333" height="88.333333333333314"/>
+                                <string key="text">The gorgeous Swiss cheese plant (Monstera deliciosa) is a fast-growing, evergreen variety of tropical plant with gorgeous, perforated, glossy foliage.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant Very Long Latin Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqg-gt-nGJ">
+                                <rect key="frame" x="30" y="355" width="333" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" name="PlantHouse White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="g5O-dz-5bY">
+                                <rect key="frame" x="30" y="391" width="333" height="34.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfL-9S-vXh">
+                                        <rect key="frame" x="0.0" y="4.3333333333333144" width="278" height="26"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwO-jT-cHc">
+                                        <rect key="frame" x="273" y="0.0" width="60" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="idx-L4-Ec3"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system"/>
+                                        <connections>
+                                            <action selector="editButtonPressed:" destination="His-Tr-feR" eventType="touchUpInside" id="ZFy-Zk-6pI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V8D-TM-vbh"/>
+                        <color key="backgroundColor" name="PlantHouse Green"/>
+                        <constraints>
+                            <constraint firstItem="Def-zb-syN" firstAttribute="leading" secondItem="V8D-TM-vbh" secondAttribute="leading" constant="30" id="1Zk-88-8OW"/>
+                            <constraint firstItem="Oqg-gt-nGJ" firstAttribute="leading" secondItem="V8D-TM-vbh" secondAttribute="leading" constant="30" id="8PT-8S-Gfk"/>
+                            <constraint firstItem="V8D-TM-vbh" firstAttribute="trailing" secondItem="g5O-dz-5bY" secondAttribute="trailing" constant="30" id="Bqn-Kk-MBR"/>
+                            <constraint firstItem="Oqg-gt-nGJ" firstAttribute="top" secondItem="khs-DP-tTq" secondAttribute="bottom" constant="30" id="Egg-Jq-9pr"/>
+                            <constraint firstItem="ztc-C5-8RS" firstAttribute="leading" secondItem="V8D-TM-vbh" secondAttribute="leading" constant="30" id="Kci-0r-cdw"/>
+                            <constraint firstItem="g5O-dz-5bY" firstAttribute="top" secondItem="Oqg-gt-nGJ" secondAttribute="bottom" constant="10" id="PnY-Mc-aTY"/>
+                            <constraint firstItem="ztc-C5-8RS" firstAttribute="top" secondItem="g5O-dz-5bY" secondAttribute="bottom" constant="10" id="RXS-MK-8bP"/>
+                            <constraint firstItem="V8D-TM-vbh" firstAttribute="trailing" secondItem="Def-zb-syN" secondAttribute="trailing" constant="30" id="TqG-C6-nuj"/>
+                            <constraint firstItem="Def-zb-syN" firstAttribute="top" secondItem="ztc-C5-8RS" secondAttribute="bottom" constant="20" id="YWX-Xi-CtN"/>
+                            <constraint firstItem="khs-DP-tTq" firstAttribute="top" secondItem="V8D-TM-vbh" secondAttribute="top" constant="20" id="cRR-jb-zUy"/>
+                            <constraint firstItem="V8D-TM-vbh" firstAttribute="trailing" secondItem="Oqg-gt-nGJ" secondAttribute="trailing" constant="30" id="dgR-rs-8NC"/>
+                            <constraint firstAttribute="trailing" secondItem="ztc-C5-8RS" secondAttribute="trailing" constant="30" id="f1h-q6-ll8"/>
+                            <constraint firstItem="g5O-dz-5bY" firstAttribute="leading" secondItem="V8D-TM-vbh" secondAttribute="leading" constant="30" id="miJ-0x-sl4"/>
+                            <constraint firstItem="khs-DP-tTq" firstAttribute="leading" secondItem="V8D-TM-vbh" secondAttribute="leading" constant="30" id="psl-RE-zlf"/>
+                            <constraint firstItem="V8D-TM-vbh" firstAttribute="trailing" secondItem="khs-DP-tTq" secondAttribute="trailing" constant="30" id="zWX-2H-USs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PlantName" id="ell-N4-O5G">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="6qQ-8K-ZSQ">
+                            <connections>
+                                <action selector="deleteButtonPressed:" destination="His-Tr-feR" id="BbG-Rs-R6d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bioText" destination="ztc-C5-8RS" id="W2j-89-RB9"/>
+                        <outlet property="careLeveLabel" destination="Zxh-pm-VqA" id="IGZ-1U-bUh"/>
+                        <outlet property="growthRateLabel" destination="iqv-yR-Qbo" id="Rrd-4n-qzk"/>
+                        <outlet property="nameLabel" destination="20R-9U-Xol" id="sDV-j4-COa"/>
+                        <outlet property="nicknameLabel" destination="MfL-9S-vXh" id="0Us-Vl-Ea9"/>
+                        <outlet property="plantImage" destination="ByC-zR-WGT" id="kXy-eu-11R"/>
+                        <outlet property="poisonousToPetsLabel" destination="QkU-6h-EKI" id="gYf-wB-ngy"/>
+                        <outlet property="sciNameLabel" destination="Oqg-gt-nGJ" id="vOt-Uu-fXA"/>
+                        <outlet property="sunlightLabel" destination="Fm3-Je-JiN" id="dr6-XT-mdd"/>
+                        <outlet property="waterLabel" destination="Ug6-yN-N9r" id="ZbC-uw-8Ve"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izX-4e-B9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3997.709923664122" y="735.91549295774655"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="PlantHouse White"/>
+    <resources>
+        <image name="Image" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Image 1" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="leaf" catalog="system" width="128" height="111"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="AccentColor">
+            <color red="0.16500000655651093" green="0.29399999976158142" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PlantHouse Green">
+            <color red="0.9100000262260437" green="0.85500001907348633" blue="0.79199999570846558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PlantHouse White">
+            <color red="0.16500000655651093" green="0.29399999976158142" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

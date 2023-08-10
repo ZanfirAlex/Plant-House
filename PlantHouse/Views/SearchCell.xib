@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ReuseSearchCell" rowHeight="120" id="KGk-i7-Jjw" customClass="SearchCell" customModule="PlantHouse" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="SearchCell" customModule="PlantHouse" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="293.66666666666669" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" clipsSubviews="YES" contentMode="center" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9e1-Bn-DLK">
+                        <rect key="frame" x="-3.3333333333333428" y="0.0" width="300.33333333333337" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="Swm-vB-gxP">
+                                <rect key="frame" x="23" y="17.666666666666671" width="85" height="85"/>
+                                <color key="backgroundColor" name="PlantHouse Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="1eQ-wo-4QO"/>
+                                    <constraint firstAttribute="height" constant="85" id="hbM-sg-8t1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wFh-ZY-gVr">
+                                <rect key="frame" x="128" y="34" width="172.33333333333337" height="52.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Plant Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBJ-Pu-SUN">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="23.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Plant Scientific Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk9-RB-rpa">
+                                        <rect key="frame" x="0.0" y="28.666666666666664" width="172.33333333333334" height="23.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <color key="textColor" name="PlantHouse White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="5uQ-0p-2zf"/>
+                            <constraint firstAttribute="trailing" secondItem="wFh-ZY-gVr" secondAttribute="trailing" id="GSs-nE-Yao"/>
+                            <constraint firstAttribute="width" constant="300" id="c1g-jA-P5A"/>
+                            <constraint firstItem="wFh-ZY-gVr" firstAttribute="leading" secondItem="Swm-vB-gxP" secondAttribute="trailing" constant="20" id="fNY-gv-El0"/>
+                            <constraint firstItem="Swm-vB-gxP" firstAttribute="leading" secondItem="9e1-Bn-DLK" secondAttribute="leading" constant="40" id="i0c-1x-N3u"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="peu-pu-IOn"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="tintColor" name="AccentColor"/>
+                <constraints>
+                    <constraint firstItem="9e1-Bn-DLK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JU2-70-tVy"/>
+                    <constraint firstItem="9e1-Bn-DLK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="llC-4W-Raz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="PlantHouse Green"/>
+            <connections>
+                <outlet property="searchImageView" destination="Swm-vB-gxP" id="vzX-X5-zbt"/>
+                <outlet property="searchNameLabel" destination="SBJ-Pu-SUN" id="k94-w0-2nN"/>
+                <outlet property="searchSciNameLabel" destination="Tk9-RB-rpa" id="VEc-m0-lSz"/>
+                <outlet property="stackForLoading" destination="9e1-Bn-DLK" id="Yl0-iv-VHz"/>
+            </connections>
+            <point key="canvasLocation" x="83.969465648854964" y="11.971830985915494"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image 1" width="341.33334350585938" height="341.33334350585938"/>
+        <namedColor name="AccentColor">
+            <color red="0.16500000655651093" green="0.29399999976158142" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PlantHouse Green">
+            <color red="0.9100000262260437" green="0.85500001907348633" blue="0.79199999570846558" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="PlantHouse White">
+            <color red="0.16500000655651093" green="0.29399999976158142" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
